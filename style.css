@@ -1,0 +1,92 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+body {
+  color: #333;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #002d5b;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+}
+/* Layout */
+footer {
+  display: flex;
+  justify-content: space-between; /* Canh giữa class .air và đẩy .links và .contact về hai bên */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  margin: 30px auto;
+  position: relative;
+  color: #fff;
+}
+
+footer .air {
+  padding: 50px;
+}
+
+footer .air ul {
+  display: flex;
+}
+
+footer .air li {
+  margin: 0px 15;
+}
+
+footer .air li a {
+  color: #333;
+  text-align: center;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+}
+
+footer .air li a.icon:hover {
+  background: coral;
+  border-radius: 50%; /* Đặt border-radius là 50% để tạo hiệu ứng hình tròn */
+}
+
+footer .contact {
+  color: #fff;
+}
+
+/* Thêm vào sau phần CSS hiện tại */
+footer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto; /* Sử dụng auto để canh phải */
+  margin-right: auto; /* Sử dụng auto để canh trái */
+}
+
+footer .contact {
+  font-size: 24px;
+  margin-right: 150px; /* Điều chỉnh khoảng cách nếu cần thiết */
+}
+footer .contact address {
+  font-style: normal;
+}
+.cop {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
